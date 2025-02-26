@@ -1,11 +1,8 @@
-type ButtonProps = { //type alias
-    ariaLabel: string, /* Force to write ariaLabels */
-    className?: string,
-    children?: React.ReactNode
-    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
+interface ButtonProps extends React.ComponentPropsWithoutRef<"button"> { 
+    ariaLabel: string, /* Force to write aria-labels */   
 }
 
-const Button = (props: ButtonProps) => {
+export const Button = (props: ButtonProps) => {
     const {children, ariaLabel, ...rest} = props;
     return (
         <button aria-label={ariaLabel} {...rest}
@@ -14,5 +11,3 @@ const Button = (props: ButtonProps) => {
         </button>
     )
 }
-
-export default Button;

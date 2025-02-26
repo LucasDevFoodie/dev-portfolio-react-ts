@@ -1,0 +1,31 @@
+p {
+    max-width: 60ch;
+    font-size: var(--size-sm);
+    color: var(--color-slate-600);
+}
+
+/* xs */
+@media (min-width: 475px) {
+    p {
+        font-size: var(--size-base);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    p {
+        font-size: var(--size-lg);
+    }
+}
+
+@media (min-width: 1280px) {
+    p {
+        font-size: var(--size-xl); 
+    }
+}
+
+@media (min-width: 1536px) {
+    p {
+        font-size: var(--size-2xl);
+    }
+}

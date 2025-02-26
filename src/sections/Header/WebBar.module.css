@@ -8,7 +8,7 @@
     z-index: 9999;
 }
 
-body:not(.light-mode) {
+body:not([data-theme='dark']) {
     .icon > svg {
         fill: var(--color-secondary)
     }

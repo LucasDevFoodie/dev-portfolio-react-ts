@@ -5,10 +5,10 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     position: relative;
-    z-index: 9999;
 }
 
 .nav {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -64,4 +64,11 @@
     color: var(--color-light);
     width: var(--size-2xl);
     height: var(--size-2xl);
+    z-index: 9999;
+}
+
+body:not([data-theme='dark']) {
+    .icon > svg {
+        fill: var(--color-secondary)
+    }
 }

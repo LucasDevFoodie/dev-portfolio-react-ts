@@ -1,14 +1,17 @@
 import { useState, useEffect } from "react";
 
-const useMediaQuery = (query: string): boolean => {
+export const useMediaQuery = (query: string): boolean => {
     const [matches, setMatches] = useState(false);
 
     useEffect(() => {
-        const matchQueryList = window.matchMedia(query);
+        const matchQueryList: MediaQueryList = window.matchMedia(query);
         const handleChange = (e: { matches: boolean | ((prevState: boolean) => boolean); }) => {
              setMatches(e.matches)
             };
-        
+            
+            // Check on mount
+            if(matchQueryList.matches) setMatches(true)
+
             matchQueryList.addEventListener('change', handleChange)
 
             return () => {
@@ -19,5 +22,3 @@ const useMediaQuery = (query: string): boolean => {
     
     return matches;
 }
-
-export default useMediaQuery;
