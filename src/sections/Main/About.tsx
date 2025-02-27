@@ -20,7 +20,7 @@ export const About = () => {
                 <div className={styles.techContainer}>
                     <div className={styles.techColumn}>
                         <div className={styles.techBox}>
-                            <Image className={styles.techBoxImg} src={Images.skillsAWS} />
+                            <Image className={styles.techBoxImg} src={Images.skillsCSS} />
                             <p className={styles.techBoxText}>CSS</p>
                         </div>
                         <div className={styles.techBox}>
