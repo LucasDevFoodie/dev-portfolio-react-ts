@@ -3,6 +3,7 @@ import {useLocalStorage} from "./useLocalStorage";
 
 //Escape hatch for themes coupled with CSS Rules. Improvement requires
 //pinpoint elements affected by theme swap.
+//Todo: Refactor to useContext
 export type Theme = 'dark' | 'light'
 
 export const useTheme = (initialTheme:Theme): [ string, () => void ] => {
