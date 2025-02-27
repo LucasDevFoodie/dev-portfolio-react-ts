@@ -4,16 +4,16 @@ import { Images } from '../../assets/Images';
 import styles from './Featured.module.css';
 
 export const Featured = () => {
-    return (
-        <section className={`${styles.featured} container section`}>
-            <h3 className={styles.subtitle}>Featured projects</h3>
+  return (
+    <section id='featured' className='container section'>
+      <h3 className={styles.subtitle}>Featured projects</h3>
       <div className={styles.wrapper}>
         <h2 className={styles.title}>Ppro Developer Hub</h2>
-            <a target="_blank" href="https://developerhub.ppro.com/">
-        <Button ariaLabel='button redirect website'>
+        <a target="_blank" href="https://developerhub.ppro.com/">
+          <Button ariaLabel='button redirect website'>
             Website
-        </Button>        
-            </a>
+          </Button>
+        </a>
       </div>
       <Text>Front end development. Migration from Vue 2 to React18+ and
         creation of landing page with Figma in cooperation with UI/UX designer.
@@ -41,30 +41,30 @@ export const Featured = () => {
       </div>
       <div className={styles.imgContainer}>
         <div className={styles.imgWrapper}>
-            <Image lazyLoading={true} src={Images.pproWeb1} alt="ppro project hero" />
-            </div>
-        <div className={styles.imgWrapper}>
-            <Image lazyLoading={true} src={Images.pproWeb2} alt="ppro project api" />
-            </div>
-        <div className={styles.imgWrapper}>
-            <Image lazyLoading={true} src={Images.pproWeb3} alt="ppro project contact" />
-            </div>
-        <div className={styles.imgWrapper}>
-            <Image lazyLoading={true} src={Images.pproWeb4} alt="ppro project documentation" />
-            </div>
-        <div className={styles.imgWrapper}>
-            <Image lazyLoading={true} src={Images.pproWeb5} alt="ppro project next documentation page" />
+          <Image lazyLoading={true} src={Images.pproWeb1} alt="ppro project hero" />
         </div>
         <div className={styles.imgWrapper}>
-            <Image lazyLoading={true} src={Images.pproMobile1} alt="ppro project mobile hero" />
-            </div>
+          <Image lazyLoading={true} src={Images.pproWeb2} alt="ppro project api" />
+        </div>
         <div className={styles.imgWrapper}>
-            <Image lazyLoading={true} src={Images.pproMobile2} alt="ppro project mobile api" />
-            </div>
+          <Image lazyLoading={true} src={Images.pproWeb3} alt="ppro project contact" />
+        </div>
         <div className={styles.imgWrapper}>
-            <Image lazyLoading={true} src={Images.pproMobile3} alt="ppro project mobile contact" />
-            </div>
+          <Image lazyLoading={true} src={Images.pproWeb4} alt="ppro project documentation" />
+        </div>
+        <div className={styles.imgWrapper}>
+          <Image lazyLoading={true} src={Images.pproWeb5} alt="ppro project next documentation page" />
+        </div>
+        <div className={styles.imgWrapper}>
+          <Image lazyLoading={true} src={Images.pproMobile1} alt="ppro project mobile hero" />
+        </div>
+        <div className={styles.imgWrapper}>
+          <Image lazyLoading={true} src={Images.pproMobile2} alt="ppro project mobile api" />
+        </div>
+        <div className={styles.imgWrapper}>
+          <Image lazyLoading={true} src={Images.pproMobile3} alt="ppro project mobile contact" />
+        </div>
       </div>
-        </section>
-    )
+    </section>
+  )
 }

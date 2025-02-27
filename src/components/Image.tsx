@@ -4,6 +4,6 @@ interface ImageProps extends React.ComponentPropsWithoutRef<'img'> {
 
 export const Image = ({src, alt, className, lazyLoading = false}: ImageProps ) => {
     return (
-        <img src={src} alt={alt} className={className} loading={lazyLoading ? 'lazy' : undefined}  />
+        <img src={src} alt={alt} className={className} loading={lazyLoading ? 'lazy' : 'eager'}  />
     )
 }
