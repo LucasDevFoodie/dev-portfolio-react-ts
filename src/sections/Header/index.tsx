@@ -5,7 +5,7 @@ import { useTheme } from "../../hooks/useTheme";
 
 export const Header = () => {
     const [theme, handleChange] = useTheme('dark');
-
+    //Note: Navigation is done by Id since it is a single page
     //Adaptative design example. Otherwise managed by CSS module.     
     return(
         useMediaQuery("(min-width: 768px)") ?

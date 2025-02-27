@@ -1,9 +1,9 @@
 import styles from './WebBar.module.css'
-import {Button} from '../../components/Button'
+import { Button } from '../../components/Button'
 import Links from '../../data/sections';
 import { MouseEventHandler } from 'react';
 
-const WebBar = ({handleThemeToggle}: {handleThemeToggle: MouseEventHandler}) => {
+const WebBar = ({ handleThemeToggle }: { handleThemeToggle: MouseEventHandler }) => {
     return (
         <header className={`${styles.header} container`}>
             <nav>
@@ -18,7 +18,7 @@ const WebBar = ({handleThemeToggle}: {handleThemeToggle: MouseEventHandler}) => 
                     <li>
                         <Button ariaLabel='theme toggle button'
                             className={styles.icon}
-                            onClick={(e) => {handleThemeToggle(e)}
+                            onClick={(e) => { handleThemeToggle(e) }
                             }>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                                 stroke="currentColor">
@@ -27,9 +27,11 @@ const WebBar = ({handleThemeToggle}: {handleThemeToggle: MouseEventHandler}) => 
                             </svg>
                         </Button>
                     </li>
-                    <li>
-                        <a className={`${styles.resume} btn`} download='Lucas-Atala-Resume' href='/Lucas-Atala-Resume.pdf'>Resume</a>
-                    </li>
+                        <a download="Lucas-Atala-Resume" href="/Lucas-Atala-Resume.pdf">
+                    <Button ariaLabel="download resume">
+                        Resume
+                    </Button>
+                        </a>
                 </ul>
             </nav>
         </header>

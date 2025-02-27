@@ -1,0 +1,144 @@
+.title  {
+    font-size: var(--size-2xl);
+    color: var(--color-light);
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: var(--size-sm);
+    color: var(--color-secondary);
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.description {
+    margin: 1rem 0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.infoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.infoContainer div {
+    flex: 1;
+    min-width: 250px;
+}
+
+.label {
+    font-size: var(--size-base);
+    text-transform: capitalize;
+    margin-bottom: 0.25rem;
+}
+
+.techStack {
+    padding: 0;
+    list-style: none;
+}
+
+.info {
+    font-size: var(--size-sm);
+    color: var(--color-slate-600);
+}
+
+.imgContainer {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .title  {
+        font-size: var(--size-3xl);
+    }
+
+    .subtitle {
+        font-size: var(--size-base);
+    }
+
+    .description {
+        margin: 1.5rem 0;
+    }
+
+    .label {
+        font-size: var(--size-lg);
+    }
+    
+    .info {
+        font-size: var(--size-base);
+    }
+
+    .imgContainer {
+        margin-top: 1.5rem;
+        gap: 1.5rem;
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .imgContainer {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+}
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+    .title  {
+        font-size: var(--size-4xl);
+    }
+
+    .subtitle {
+        font-size: var(--size-lg);
+    }
+   
+    .label {
+        font-size: var(--size-xl);
+    }
+    
+    .info {
+        font-size: var(--size-lg);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .title  {
+        font-size: var(--size-5xl);
+    }
+
+    .subtitle {
+        font-size: var(--size-xl);
+    }
+
+    .description {
+        margin: 2rem 0;
+    }
+    
+    .label {
+        font-size: var(--size-2xl);
+    }
+    
+    .info {
+        font-size: var(--size-xl);
+    }
+
+    .imgContainer {
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

@@ -1,0 +1,28 @@
+//Refactor: Since they are coupled to Image component, that component could receive a prop 
+//with these options.
+export const Images = {
+    hero: new URL('./images/hero_image.jpeg', import.meta.url).href,
+    heroProfile: new URL('./images/hero_profile.jpeg', import.meta.url).href,
+    skillsAWS:  new URL('./images/skills_aws.png', import.meta.url).href,
+    skillsCSHARP:  new URL('./images/skills_csharp.png', import.meta.url).href,
+    skillsCSS:  new URL('./images/skills_css.png', import.meta.url).href,
+    skillsGIT:  new URL('./images/skills_git.png', import.meta.url).href,
+    skillsHTML:  new URL('./images/skills_html.png', import.meta.url).href,
+    skillsJSTS:  new URL('./images/skills_js-ts.png', import.meta.url).href,
+    skillsMONGO:  new URL('./images/skills_mongo.png', import.meta.url).href,
+    skillsNET:  new URL('./images/skills_net.png', import.meta.url).href,
+    skillsNODE:  new URL('./images/skills_node.png', import.meta.url).href,
+    skillsPOSTGRE:  new URL('./images/skills_postgre.png', import.meta.url).href,
+    skillsREACT:  new URL('./images/skills_react.png', import.meta.url).href,
+    pproWeb1:  new URL('./images/ppro_web_1.png', import.meta.url).href,
+    pproWeb2:  new URL('./images/ppro_web_2.png', import.meta.url).href,
+    pproWeb3:  new URL('./images/ppro_web_3.png', import.meta.url).href,
+    pproWeb4:  new URL('./images/ppro_web_4.png', import.meta.url).href,
+    pproWeb5:  new URL('./images/ppro_web_5.png', import.meta.url).href,
+    pproMobile1:  new URL('./images/ppro_mobile_1.png', import.meta.url).href,
+    pproMobile2:  new URL('./images/ppro_mobile_2.png', import.meta.url).href,
+    pproMobile3:  new URL('./images/ppro_mobile_3.png', import.meta.url).href,
+    projectAlpha:  new URL('./images/project_alpha.png', import.meta.url).href,
+    projectMLF:  new URL('./images/project_mlf.png', import.meta.url).href,
+    projectWheelsky:  new URL('./images/project_wheelsky.png', import.meta.url).href,
+}
