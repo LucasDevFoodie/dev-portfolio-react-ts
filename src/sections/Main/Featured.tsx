@@ -15,7 +15,7 @@ export const Featured = () => {
         </Button>        
             </a>
       </div>
-      <Text className={styles.description}>Front end development. Migration from Vue 2 to React18+ and
+      <Text>Front end development. Migration from Vue 2 to React18+ and
         creation of landing page with Figma in cooperation with UI/UX designer.
       </Text>
       <div className={styles.infoContainer}>

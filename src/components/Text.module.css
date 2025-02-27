@@ -2,12 +2,14 @@ p {
     max-width: 60ch; /* 1ch equal to the width of the "0" character of the font type (aim to 20% more)*/
     font-size: var(--size-sm);
     color: var(--color-slate-600);
+    margin: 1rem 0;
 }
 
 /* xs */
 @media (min-width: 475px) {
     p {
         font-size: var(--size-base);
+        margin: 1.5rem 0;
     }
 }
 
@@ -21,6 +23,7 @@ p {
 @media (min-width: 1280px) {
     p {
         font-size: var(--size-xl); 
+        margin: 2rem 0;
     }
 }
 

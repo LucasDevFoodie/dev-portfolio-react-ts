@@ -11,10 +11,6 @@
     font-weight: 400;
 }
 
-.description {
-    margin: 1rem 0;
-}
-
 .wrapper {
     display: flex;
     align-items: center;
@@ -63,10 +59,6 @@
 
     .subtitle {
         font-size: var(--size-base);
-    }
-
-    .description {
-        margin: 1.5rem 0;
     }
 
     .label {
