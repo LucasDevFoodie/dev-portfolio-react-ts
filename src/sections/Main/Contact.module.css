@@ -1,0 +1,46 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.title {
+    font-size: var(--size-2xl);
+    color: var(--color-ligh);
+    text-transform: capitalize;
+    color: var(--color-light);
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .contact {
+        gap: 1.5rem;
+    }
+    
+    .title {
+        font-size: var(--size-3xl);
+    }   
+}
+
+
+
+/* lg */
+@media (min-width: 1024px) {
+    .title {
+        font-size: var(--size-4xl);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .contact {
+        gap: 2rem;
+    }
+    
+    .title {
+        font-size: var(--size-5xl);
+    }   
+}

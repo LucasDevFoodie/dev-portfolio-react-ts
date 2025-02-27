@@ -1,0 +1,43 @@
+.footer {
+    margin-top: 1rem;
+    margin-bottom: 1em;
+    font-size: var(--size-xs);
+}
+
+.label {
+    font-weight: 400;
+    color: var(--color-slate-600);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    user-select: none;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.logos {
+    display: flex;
+    gap: 1em
+}
+
+.img {
+    width: 4em;
+    height: 4em;
+    align-content: center;
+}
+
+.date {
+    font-size: 1rem;;
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    footer {
+        font-size: var(--size-base);
+    }
+}    
