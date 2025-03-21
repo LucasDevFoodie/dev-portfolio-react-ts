@@ -25,5 +25,6 @@ export const Images = {
     projectAlpha:  new URL('./images/project_alpha.png', import.meta.url).href,
     projectMLF:  new URL('./images/project_mlf.png', import.meta.url).href,
     projectWheelsky:  new URL('./images/project_wheelsky.png', import.meta.url).href,
+    projectAOW:  new URL('./images/project_AOW.png', import.meta.url).href,
     github: new URL('./images/github-logo.png', import.meta.url).href,
 }

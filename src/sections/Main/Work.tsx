@@ -73,6 +73,22 @@ export const Work = () => {
                         <Button ariaLabel='Wheelsky inline skate web page demo'>Website</Button>
                     </a>
                 </div>
+
+                <h3 className={styles.projectTitle}>AOW</h3>
+                <div className={`${styles.imgWrapper} ${styles.image4}`}>
+                    <Image lazyLoading={true} src={Images.projectAOW}
+                        alt="AOW web page demo" /></div>
+                <div className={styles.project}>
+                    <h3 className={styles.projectTitleGrid}>AOW</h3>
+                    <p className={styles.projectDescription}>Webpage for Adelaide On Wheels School with Eshop and School details</p>
+                    <p className={styles.projectDetails}>Fullstack solo development for a inline skate school that required payment
+                    methods integration and a responsive design with all the details for the school. The school required a timetable and google maps integration.
+                    </p>
+                    <a className="btn work__project-btn" target="_blank"
+                        href="https://aow-pro.vercel.app/">
+                        <Button ariaLabel='AOW web page demo'>Website</Button>
+                    </a>
+                </div>
             </div>
         </section>
     )

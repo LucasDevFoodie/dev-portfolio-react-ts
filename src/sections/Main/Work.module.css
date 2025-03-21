@@ -68,7 +68,8 @@
         grid-template-areas:
             'image1 content1'
             'content2 image2'
-            'image3 content3';
+            'image3 content3'
+            'content4 image4';
         place-items: center;
     }
 
@@ -82,6 +83,10 @@
 
     .image3 {
         grid-area: image3;
+    }
+
+    .image4 {
+        grid-area: image4;
     }
 
     .project {
